@@ -1014,14 +1014,6 @@ html {
 	box-sizing: inherit;
 }
 
-body {
-	font-size: var(--global--font-size-base);
-	font-weight: normal;
-	color: var(--global--color-primary);
-	text-align: left;
-	background-color: var(--global--color-background);
-}
-
 button {
 	cursor: pointer;
 }
@@ -1583,14 +1575,9 @@ pre {
 a {
 	cursor: pointer;
 	color: var(--wp--style--color--link, var(--global--color-primary));
-	text-underline-offset: 3px;
-	text-decoration-skip-ink: all;
+	text-decoration: none;
 }
 
-a:hover {
-	text-decoration-style: dotted;
-	text-decoration-skip-ink: none;
-}
 
 .site a:focus:not(.wp-block-button__link):not(.wp-block-file__button) {
 
@@ -4914,22 +4901,11 @@ h1.page-title {
 	color: var(--primary-nav--color-link-hover);
 }
 
-.primary-navigation a:hover {
-	text-decoration: underline;
-	text-decoration-style: dotted;
-}
-
 .primary-navigation a:focus {
 	position: relative;
 	z-index: 99999;
 	outline-offset: 0;
 	text-decoration-thickness: 2px;
-}
-
-.primary-navigation .current-menu-item > a:first-child,
-.primary-navigation .current_page_item > a:first-child {
-	text-decoration: underline;
-	text-decoration-style: solid;
 }
 
 .primary-navigation .current-menu-item > a:first-child:hover,

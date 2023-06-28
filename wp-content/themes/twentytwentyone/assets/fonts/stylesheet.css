@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('SVN-GilroyLight.eot');
+    src: url('SVN-GilroyLight.eot?#iefix') format('embedded-opentype'),
+        url('SVN-GilroyLight.woff2') format('woff2'),
+        url('SVN-GilroyLight.woff') format('woff'),
+        url('SVN-GilroyLight.ttf') format('truetype'),
+        url('SVN-GilroyLight.svg#SVN-GilroyLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('SVN-GilroyMedium.eot');
+    src: url('SVN-GilroyMedium.eot?#iefix') format('embedded-opentype'),
+        url('SVN-GilroyMedium.woff2') format('woff2'),
+        url('SVN-GilroyMedium.woff') format('woff'),
+        url('SVN-GilroyMedium.ttf') format('truetype'),
+        url('SVN-GilroyMedium.svg#SVN-GilroyMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

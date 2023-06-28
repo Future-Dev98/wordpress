@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Pacifico';
+    src: url('../fonts/Pacifico-Regular.woff2') format('woff2'),
+         url('../fonts/Pacifico-Regular.woff') format('woff'),
+         url('../fonts/Pacifico-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('../fonts/SVN-GilroyMedium.woff2') format('woff2'),
+         url('../fonts/SVN-GilroyMedium.woff') format('woff'),
+         url('../fonts/SVN-GilroyMedium.ttf') format('truetype');
+    font-weight: 400;
+}
+body {
+    --pri-color: #A34C69;
+    --second-color: #FFD35C;
+}
+p {
+    font-family: 'SVN-Gilroy';
+    font-size: 18px;
+    line-height: 24.84px;
+    color: #000;
+}
+h2 {
+    font-size: 83px;
+    line-height: 89.72px;
+    font-family: 'SVN-Gilroy';
+}
+h2.title {
+    color: var(--pri-color);
+    font-weight: bold;
+    text-align: center;
+}
+.container {
+    max-width: 1212px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.subtitle {
+    font-size: 30px;
+    line-height: 52.68px;
+    text-align: center;
+    font-weight: 400;
+    color: var(--pri-color);
+    font-family: 'Pacifico';
+}
+.btn {
+    border-radius: 27.5px;
+    border: 1px solid var(--pri-color);
+    padding: 10px 59px 10px 19px;
+    color: var(--pri-color);
+    font-weight: bold;
+    position: relative;
+    width: auto;
+    display: inline-block;
+    transition: all .3s;
+}
+
+.btn:before {
+    content:'';
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: var(--pri-color) url(../images/arrow.svg) center no-repeat;
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.btn:hover{
+    color: white;
+    background-color: var(--pri-color);
+}
+
+.btn.white:before {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn.white:hover:before {
+    color: var(--pri-color);
+    background-color: var(--second-color);
+}
